@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\gavin\.android\build-cache\6f9144915e9133faea90d7f49eec313f38eb680f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
+        <dex dex="C:\Users\gavin\Downloads\Electrocar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_808eddb24c1c9f98275af4bdfa16a5e5462012fb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\gavin\.android\build-cache\7a330663b40667f03a5a3378c363929b227f47ae\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="C:\Users\gavin\Downloads\Electrocar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_af3afb869c63fceab435fc97481657412fd4b355\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\gavin\.android\build-cache\94130f049de1cb33555a2af033db8c3b594ed361\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
+        <dex dex="C:\Users\gavin\Downloads\Electrocar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_01afee1862e2865be7c7a3123321a32e22dacc13\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\gavin\.android\build-cache\414caacced91109ac91b615f30278588039a5df5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fc29308a7a8f6d4407b34634eb48fb8b817f9b23">
+        <dex dex="C:\Users\gavin\Downloads\Electrocar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c5b886537b00d5f7ca78f11394f0825a7fedbf19\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\gavin\.android\build-cache\e94c9992f79706dc8b8a26fbd2f246321bdef4b5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="45cca9f5fd0386ff5f7a51fcfc8e2c42df4798e4">
+        <dex dex="C:\Users\gavin\Downloads\Electrocar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_59ad8d41d92cf304615822f920658238cf5a7818\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\gavin\Downloads\Electrocar-master\app\libs\libammsdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c2f29c05b35e8c8713be2b81c41cf18f98b64a">
+        <dex dex="C:\Users\gavin\Downloads\Electrocar-master\app\build\intermediates\transforms\dex\debug\folders\1000\2\libammsdk_9f8743ebb3ded1d15c14ba19eecb4d4315a2a6a6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\gavin\.android\build-cache\ee34cf10c3e55ddd625cbb5eac1a48b02239105d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f62e763609f65e47dc6c498760a4accf02776788">
+        <dex dex="C:\Users\gavin\Downloads\Electrocar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_231de7c9a71ef92442281ff733501b712b6f6e59\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\gavin\.android\build-cache\2ba34a177356ae84804d6f9fba1e2de2e78d008e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="894922f67adeaaef51f077a29e315da21a3382d3">
+        <dex dex="C:\Users\gavin\Downloads\Electrocar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ee945d0e65c0e07cbc28cd959ddc886f4881a0b2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\gavin\.android\build-cache\29828dd209cf0c46e9e0b0337a93283d8c4b1dd5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="C:\Users\gavin\Downloads\Electrocar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3ace1714a69678ffe09be18195126f8dd45db747\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\gavin\Downloads\Electrocar-master\app\libs\AMap2DMap_2.9.2_AMapLocation_3.1.0_20161027.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="18b13a225fbb539e53237e55b299280419c94d9f">
+        <dex dex="C:\Users\gavin\Downloads\Electrocar-master\app\build\intermediates\transforms\dex\debug\folders\1000\2\AMap2DMap_2.9.2_AMapLocation_3.1.0_20161027_a611ed14545f50b96c94dc0b34c828856dfe558e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\gavin\.android\build-cache\29828dd209cf0c46e9e0b0337a93283d8c4b1dd5\output\jars\libs\internal_impl-24.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="C:\Users\gavin\Downloads\Electrocar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.1.1_a2c445501351f4189479b9a358c39297f2ebb507\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\gavin\Downloads\Electrocar-master\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="09478626fb3351ddcb26a8fe1d75c79f7ba009b4">
+        <dex dex="C:\Users\gavin\Downloads\Electrocar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_809205776aacb383a5f331404948f511b055198f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\gavin\Downloads\Electrocar-master\app\libs\ZBarDecoder.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="491976f010e6196c0b1a0470c4657f295ed933fc">
+        <dex dex="C:\Users\gavin\Downloads\Electrocar-master\app\build\intermediates\transforms\dex\debug\folders\1000\2\ZBarDecoder_5e57c735854e841e62387a1cff4c6aa2ebd93d1b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\gavin\Downloads\Electrocar-master\app\libs\pgyer_sdk_2.4.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="89a28ee5b7546995068e8730cfef814ed2ed7701">
+        <dex dex="C:\Users\gavin\Downloads\Electrocar-master\app\build\intermediates\transforms\dex\debug\folders\1000\2\pgyer_sdk_2.4.2_a33ccca89eae0ac479b4c3494f8089d9d0a0778d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\gavin\Downloads\Electrocar-master\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="C:\Users\gavin\Downloads\Electrocar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_0918ac8c540be9bbe4f4374dda19e46495c03be5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\SDK\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.1.1\support-annotations-24.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="C:\Users\gavin\Downloads\Electrocar-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.1.1_59208170c9694ecd17680be005f20c4b08e1bbf8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\gavin\Downloads\Electrocar-master\app\libs\httpclient-4.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b69bd03af60bf487b3ae1209a644ecac587bf6fc">
+        <dex dex="C:\Users\gavin\Downloads\Electrocar-master\app\build\intermediates\transforms\dex\debug\folders\1000\2\httpclient-4.2.1_a2886725fb5f0c22e2d9af66523ed9fab156552a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\gavin\Downloads\Electrocar-master\app\libs\alipaySdk-20161129.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9356473ed942faa70a18f34883af52681e1c7223">
+        <dex dex="C:\Users\gavin\Downloads\Electrocar-master\app\build\intermediates\transforms\dex\debug\folders\1000\2\alipaySdk-20161129_c60c5e654c058efb77187530fa3ab2cf973904c0\classes.dex" />
+    </item>
+
+</items>

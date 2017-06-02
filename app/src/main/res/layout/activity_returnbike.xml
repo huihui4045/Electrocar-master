@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/actstyle">
+
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:src="@drawable/success"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvSuc"
+            android:text="归还成功"
+            android:textSize="@dimen/FontTitle"
+            android:textColor="@android:color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/iv"
+            android:layout_marginTop="36dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/ac_returnbike_h1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:background="@color/FontBabyGray"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="2dp"/>
+
+        <TextView
+            android:gravity="center"
+            android:text="订单详情"
+            android:textColor="@color/FontGray"
+            android:textSize="@dimen/FontTitle_Small"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="@color/FontBabyGray"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="2dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/ac_returnbike_h2"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="使用时间"
+                android:textSize="@dimen/FontTitle_Small"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:text="2.5h"
+                android:layout_marginTop="15dp"
+                android:textSize="@dimen/FontBig"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="消费金额"
+                android:textSize="@dimen/FontTitle_Small"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvMoney"
+                android:text="¥0"
+                android:layout_marginTop="15dp"
+                android:textSize="@dimen/FontBig"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/ac_returnbike_h3"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="租借时间"
+            android:textColor="@color/FontGray"
+            android:layout_width="wrap_content"
+            android:maxLines="1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvStartTime"
+            android:textColor="@color/FontGray"
+            android:layout_marginLeft="40dp"
+            android:gravity="right"
+            android:text="2016年10月10日 10:30:00"
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="租借地点"
+            android:textColor="@color/FontGray"
+            android:layout_width="wrap_content"
+            android:maxLines="1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvStartPos"
+            android:textColor="@color/FontGray"
+            android:layout_marginLeft="40dp"
+            android:gravity="right"
+            android:text="深圳市宝安区西乡铁岗村水库路"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="归还时间"
+            android:textColor="@color/FontGray"
+            android:layout_width="wrap_content"
+            android:maxLines="1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvEndTime"
+            android:textColor="@color/FontGray"
+            android:layout_marginLeft="40dp"
+            android:gravity="right"
+            android:text="2016年10月10日 10:30:00"
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="归还地点"
+            android:textColor="@color/FontGray"
+            android:layout_width="wrap_content"
+            android:maxLines="1"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvEndPos"
+            android:textColor="@color/FontGray"
+            android:layout_marginLeft="40dp"
+            android:gravity="right"
+            android:text="深圳市宝安区西乡铁岗村水库路"
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

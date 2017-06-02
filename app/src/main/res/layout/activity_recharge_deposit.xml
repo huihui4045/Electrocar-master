@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/actstyle">
+
+    <include layout="@layout/toolbar"/>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="@dimen/margin_x"
+        android:text="充值金额"
+        android:textSize="@dimen/FontInput"
+        android:textColor="@color/FontGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="@dimen/margin_x"
+        android:layout_marginRight="@dimen/margin_x"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" >
+
+        <TextView
+            android:id="@+id/tvMoney"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="7dp"
+            android:textSize="@dimen/FontBig"
+            android:textColor="@color/FontBlue"
+            android:gravity="center"
+            android:text="199元"
+            android:background="@drawable/frame_blue"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/ac_refound_h1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/FillGray" />
+
+    <LinearLayout
+        android:id="@+id/loWeixin"
+        android:layout_height="48dp"
+        style="@style/item_Layout">
+
+        <ImageView
+            android:src="@drawable/wechat"
+            style="@style/icLogin" />
+
+        <TextView
+            style="@style/itemtv"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="微信"/>
+
+        <ImageView
+            android:id="@+id/ivWeixinCheck"
+            android:src="@drawable/check_off"
+            android:layout_marginRight="15dp"
+            style="@style/icLogin" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/FillGray" />
+
+    <LinearLayout
+        android:id="@+id/loZhifu"
+        android:layout_height="48dp"
+        style="@style/item_Layout">
+
+        <ImageView
+            android:src="@drawable/zhifu"
+            style="@style/icLogin" />
+
+        <TextView
+            style="@style/itemtv"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="支付宝"/>
+
+        <ImageView
+            android:id="@+id/ivZhifuCheck"
+            android:src="@drawable/check_on"
+            android:layout_marginRight="15dp"
+            style="@style/icLogin" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/FillGray" />
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="@dimen/margin_x"
+        android:layout_marginRight="@dimen/margin_x"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/FontInput"
+            android:textColor="@color/FontBlack"
+            android:text="1，押金可原路退回。"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/FontInput"
+            android:textColor="@color/FontBlack"
+            android:text="2，车费不在押金内扣除，需另外缴纳。"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnOK"
+        android:text="确定支付"
+        android:layout_marginTop="@dimen/ac_refound_h1"
+        android:background="@drawable/sl_longbtn"
+        style="@style/LongBtn" />
+
+</LinearLayout>

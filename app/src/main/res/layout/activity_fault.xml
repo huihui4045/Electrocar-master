@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/actstyle">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/loScan"
+        android:clickable="true"
+        android:layout_height="48dp"
+        style="@style/item_Layout">
+
+        <ImageView
+            android:id="@+id/ivScan"
+            android:src="@drawable/ic_lscanning"
+            style="@style/icLogin" />
+
+        <EditText style="@style/etLogin"
+            android:id="@+id/etBikeEan"
+            android:hint="请扫描车辆二维码"/>
+
+    </LinearLayout>
+
+    <View style="@style/separate_view" />
+
+    <ScrollView
+        android:layout_marginTop="@dimen/margin_x"
+        android:layout_marginLeft="@dimen/margin_x"
+        android:layout_marginRight="@dimen/margin_x"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ac_fault_h1">
+
+        <EditText
+            android:id="@+id/etInput"
+            android:hint="请描述您的问题"
+            android:textSize="@dimen/FontInput"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/ivId1"
+        android:src="@drawable/add_photo"
+        android:layout_marginTop="@dimen/margin_x"
+        android:layout_marginLeft="@dimen/margin_x"
+        android:layout_width="@dimen/pic_icon"
+        android:layout_height="@dimen/pic_icon" />
+
+    <TextView
+        android:id="@+id/tvNum"
+        android:text="240"
+        android:textColor="@color/FontGray"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/margin_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginTop="@dimen/margin_x"
+        android:background="@color/FillGray"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <LinearLayout
+        android:layout_height="48dp"
+        style="@style/item_Layout">
+
+        <EditText style="@style/etLogin"
+            android:id="@+id/etPhone"
+            android:inputType="phone"
+            android:hint="请输入您的电话"/>
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/FillGray"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <Button
+        android:id="@+id/btnOK"
+        android:text="提交"
+        android:layout_marginTop="@dimen/ac_fault_h2"
+        android:background="@drawable/sl_longbtn"
+        style="@style/LongBtn" />
+
+
+</LinearLayout>

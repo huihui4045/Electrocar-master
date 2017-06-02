@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_height="48dp"
+        style="@style/item_Layout">
+
+        <ImageView
+            android:src="@drawable/ic_me"
+            style="@style/icLogin" />
+        
+        <EditText style="@style/etLogin"
+            android:id="@+id/etUser"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:hint="请输入4~20位字母、数字或字母数字组合"/>
+
+    </LinearLayout>
+
+    <View style="@style/separate_view" />
+
+    <LinearLayout
+        android:layout_height="48dp"
+        style="@style/item_Layout">
+
+        <ImageView
+            android:src="@drawable/ic_lock"
+            style="@style/icLogin" />
+
+        <EditText style="@style/etLogin"
+            android:id="@+id/etPwd"
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            android:hint="请输入6-20位密码"/>
+
+        <ImageView
+            android:id="@+id/ivOpen"
+            android:src="@drawable/ic_close"
+            android:layout_marginRight="30dp"
+            style="@style/icLogin" />
+
+    </LinearLayout>
+
+    <View style="@style/separate_view" />
+
+    <LinearLayout
+        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:gravity="right">
+        <TextView
+            android:id="@+id/tvForgotPwd"
+            android:text="忘记密码"
+            android:gravity="center"
+            android:textColor="@color/FontBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:text="登录"
+        android:layout_marginTop="@dimen/LongBtnMgTop"
+        android:background="@drawable/sl_longbtn"
+        style="@style/LongBtn" />
+
+</LinearLayout>

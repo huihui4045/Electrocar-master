@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/actstyle">
+
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:id="@+id/lo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <saiyi.com.xiande.base.PullToRefreshListView
+            android:id="@+id/lvBikeList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/tvMsg"
+            android:visibility="invisible"
+            android:layout_centerInParent="true"
+            android:text="暂时没有任何车辆哦！"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/ivMsg"
+            android:visibility="invisible"
+            android:layout_above="@+id/tvMsg"
+            android:layout_marginBottom="@dimen/margin_x"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</LinearLayout>

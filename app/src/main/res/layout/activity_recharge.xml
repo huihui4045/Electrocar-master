@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/actstyle">
+
+    <include layout="@layout/toolbar"/>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="@dimen/margin_x"
+        android:text="充值金额"
+        android:textSize="@dimen/FontInput"
+        android:textColor="@color/FontGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="@dimen/margin_x"
+        android:layout_marginRight="@dimen/margin_x"
+        android:background="@drawable/frame_gray"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <EditText
+            android:id="@+id/etMoney"
+            android:textSize="@dimen/FontInput"
+            android:textColor="@color/FontBlack"
+            android:textColorHint="@color/FontBabyGray"
+            android:hint="输入充值金额"
+            android:background="@null"
+            android:maxLines="1"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_x"
+            android:layout_marginRight="@dimen/margin_x"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="@dimen/margin_x"
+        android:layout_marginRight="@dimen/margin_x"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <TextView
+            android:id="@+id/tvMoney20"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="7dp"
+            android:textSize="@dimen/FontInput"
+            android:textColor="@color/FontBlue"
+            android:gravity="center"
+            android:text="20元"
+            android:background="@drawable/frame_blue"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tvMoney50"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:textSize="@dimen/FontInput"
+            android:textColor="@color/FontBlue"
+            android:gravity="center"
+            android:text="50元送20"
+            android:background="@drawable/frame_blue"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="@dimen/margin_x"
+        android:layout_marginRight="@dimen/margin_x"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <TextView
+            android:id="@+id/tvMoney100"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="7dp"
+            android:textSize="@dimen/FontInput"
+            android:textColor="@color/FontBlue"
+            android:gravity="center"
+            android:text="100元送50"
+            android:background="@drawable/frame_blue"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/tvMoney200"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:textSize="@dimen/FontInput"
+            android:textColor="@color/FontBlue"
+            android:gravity="center"
+            android:text="200元送120"
+            android:background="@drawable/frame_blue"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/ac_refound_h1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/FillGray" />
+
+    <LinearLayout
+        android:id="@+id/loWeixin"
+        android:layout_height="48dp"
+        style="@style/item_Layout">
+
+        <ImageView
+            android:src="@drawable/wechat"
+            style="@style/icLogin" />
+
+        <TextView
+            style="@style/itemtv"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="微信"/>
+
+        <ImageView
+            android:id="@+id/ivWeixinCheck"
+            android:src="@drawable/check_off"
+            android:layout_marginRight="15dp"
+            style="@style/icLogin" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/FillGray" />
+
+    <LinearLayout
+        android:id="@+id/loZhifu"
+        android:layout_height="48dp"
+        style="@style/item_Layout">
+
+        <ImageView
+            android:src="@drawable/zhifu"
+            style="@style/icLogin" />
+
+        <TextView
+            style="@style/itemtv"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="支付宝"/>
+
+        <ImageView
+            android:id="@+id/ivZhifuCheck"
+            android:src="@drawable/check_on"
+            android:layout_marginRight="15dp"
+            style="@style/icLogin" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/FillGray" />
+
+    <Button
+        android:id="@+id/btnOK"
+        android:text="充值"
+        android:layout_marginTop="@dimen/ac_refound_h1"
+        android:background="@drawable/sl_longbtn"
+        style="@style/LongBtn" />
+
+</LinearLayout>

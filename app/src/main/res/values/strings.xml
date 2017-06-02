@@ -1,0 +1,155 @@
+<resources>
+    <string name="app_name">e骑</string>
+
+    <string name="title_location">获取定位数据</string>
+    <string name="location">获取定位数据</string>
+    <string name="location_dec">调用定位接口获取定位数据</string>
+
+    <string name="title_geoFenceAlert">地理围栏</string>
+    <string name="geoFenceAlert">地理围栏</string>
+    <string name="geoFenceAlert_dec">可以设置对进入或离开区域进行提醒</string>
+
+
+    <string name="title_assistantLocation">H5辅助定位</string>
+    <string name="assistantLocation">H5辅助定位</string>
+    <string name="assistantLocation_dec">展示H5辅助定位功能</string>
+
+    <string name="title_tools">地图计算工具</string>
+    <string name="tools">地图计算工具</string>
+    <string name="tools_dec">坐标转换等功能演示</string>
+
+    <string name="title_lastLocation">获取最后一次位置</string>
+    <string name="lastLocation">获取最后一次位置</string>
+    <string name="lastLocation_dec">获取最后一次定位的位置，此位置是一个历史位置</string>
+
+
+    <string name="title_alarmCPU">定时唤起CPU</string>
+    <string name="alarmCPU">定时唤起cpu</string>
+    <string name="alarmCPU_dec">通过一个闹钟程序后台定时唤起cpu</string>
+
+    <string name="title_errorCode">错误码说明</string>
+    <string name="errorCode">错误码说明</string>
+    <string name="errorCode_dec">错误码说明以及对应的解决方法</string>
+
+    <string name="defaultInteval">2000</string>
+    <string name="defaultHttpTimeout">30000</string>
+
+    <string name="battery_saving">低功耗模式</string>
+    <string name="device_sensors">仅设备模式</string>
+    <string name="hight_accuracy">高精度模式</string>
+    <string name="interval">定位周期(ms)</string>
+    <string name="httpTimeout">网络超时(ms)</string>
+    <string name="location_once">单次定位</string>
+    <string name="needAddress">逆地理编码</string>
+    <string name="cacheAble">开启缓存</string>
+    <string name="onceLastest">提高首次定位精度</string>
+    <string name="gpsFirst">GPS优先</string>
+    <string name="useSensor">使用传感器</string>
+
+    <string name="alarmInterval">唤醒周期(s)</string>
+
+    <string name="startLocation">开始定位</string>
+    <string name="stopLocation">停止定位</string>
+
+    <string name="fenceRadius">围栏半径</string>
+    <string name="meter">米</string>
+    <string name="alertIn">进入提醒</string>
+    <string name="alertOut">离开提醒</string>
+    <string name="addFence">添加围栏</string>
+    <string name="removeFence">移除围栏</string>
+
+    <string name="getLastLocation">获取最后位置</string>
+
+    <string name="startAssistantLocation">启动H5辅助定位</string>
+    <string name="stopAssistantLocation">停止H5辅助定位</string>
+    <string name="urlLocation">浏览器定位</string>
+    <string name="assistantLocationInfo">辅助定位已经启动，请点击模拟浏览器请求或者在浏览器中输入http://127.0.0.1:43689/进行测试</string>
+
+    <string name="coordinateConvert">坐标转换</string>
+    <string name="checkIsChina">位置区域判断</string>
+
+    <string name="notifyTitle">提示</string>
+    <string name="notifyMsg">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+
+    <string name="camera_pop_camera">相机拍摄</string>
+    <string name="camera_pop_album">从相册选取</string>
+    <string name="camera_pop_normal">使用默认</string>
+    <string name="camera_pop_cancel">取消</string>
+
+    <!-- WXPayEntryActivity -->
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+
+    <!--下拉刷新组件-->
+    <string name="pull_to_refresh_pull_label_it">下拉可以刷新</string>
+    <string name="pull_to_refresh_release_label_it">松开即可刷新</string>
+    <string name="pull_to_refresh_refreshing_label_it">正在刷新数据…</string>
+    <string name="pull_to_refresh_updated_at">上次更新时间:%1$s</string>
+    <string name="pull_to_refresh_pull_label" translatable="false">向下拉动可以刷新</string>
+    <string name="pull_to_refresh_release_label" translatable="false">松开可以刷新</string>
+    <string name="pull_to_refresh_refreshing_label" translatable="false">加载中&#8230;</string>
+    <string name="pull_to_refresh_tap_label" translatable="false">点击刷新</string>
+    <!--上拉加载更多-->
+    <string name="string_load_more_empty">已经没有更多数据了</string>
+    <string name="string_load_more">上拉加载更多</string>
+    <string name="string_load_more_error">加载更多数据失败</string>
+    <string name="string_load_more_click">点击加载更多</string>
+    <string name="string_load_more_ing">正在加载更多数据</string>
+    <string name="string_load_more_net">网络错误</string>
+
+	<string name="errorCodeInfo">
+	    0	定位成功。	可以在定位回调里判断定位返回成功后再进行业务逻辑运算\n
+	    1	一些重要参数为空，如context；	请对定位传递的参数进行非空判断\n
+	    2	定位失败，由于仅扫描到单个wifi，且没有基站信息。	请重新尝试\n
+	    3	获取到的请求参数为空，可能获取过程中出现异常。	请对所连接网络进行全面检查，请求可能被篡改\n
+	    4	请求服务器过程中的异常，多为网络情况差，链路不通导致	请检查设备网络是否通畅\n
+	    5	返回的XML格式错误，解析失败。	请稍后再试\n
+	    6	定位服务返回定位失败。	请将errorDetail（通过getLocationDetail()方法获取）信息通过工单系统反馈给我们\n
+	    7	KEY鉴权失败。	请仔细检查key绑定的sha1值与apk签名sha1值是否对应，或通过高频问题查找相关解决办法\n
+	    8	Android exception常规错误	请将errordetail（通过getLocationDetail()方法获取）信息通过工单系统反馈给我们\n
+	    9	定位初始化时出现异常。	请重新启动定位\n
+	    10	定位客户端启动失败。	请检查AndroidManifest.xml文件是否配置了APSService定位服务\n
+	    11	定位时的基站信息错误。	请检查是否安装SIM卡，设备很有可能连入了伪基站网络\n
+	    12	缺少定位权限。	请在设备的设置中开启app的定位权限\n
+	</string>
+
+    <string name="agreementName"><u>e骑租车协议</u></string>
+    <string name="agreementName2"><u>用车协议</u></string>
+    <string name="agreement">
+        \t本服务条款是您与e骑-电动自行车租赁平台（包含e骑网站、e骑手机终端软件）的所有者---苏州闲德网络科技有限公司及其关联公司之间就e骑提供的各项服务等相关事宜所订立的合约或合同。\n
+       \t请您仔细阅读本条款，您勾选我已了解并接受《注册服务条款》并点击【立即注册】按钮注册成功后成为e骑的会员，本服务条款即构成了对双方具有法律约束力的文件。在此特别提醒您在注册成为用户之前，请认真阅读本协议，确保您充分理解本协议中各条款。请您审慎阅读并选择接受或不接受本协议。您的注册、登陆、使用等行为将视为对本协议的接受，并同意接受本协议各项条款的约束。本协议可由e骑随时更新，更新后的协议条款一旦公布即代替原来的协议条款，恕不再另行通知，用户可在本APP中查询最新版协议条款。在修改协议条款后，如果用户不接受修改后的条款，请立即停止使用e骑提供的服务，用户继续使用e骑提供的服务将被视为接受修改后的协议。\n
+       \t一、账号注册及用户须知\n
+       \t1、用户在使用本服务前需要注册一个“e骑”账号，“e骑”账号应当使用手机号码绑定注册，填写相关信息，且需根据提示拍摄本人相关证件（如学生证、身份证等）及本人手持相关证件的照片并上传，待e骑后台审核通过后即完成注册。如您的资料发生变更，您应及时更新您的资料，以使之真实、及时、完整和准确。e骑可以根据用户需求或产品需要对账号注册及绑定方式进行变更，而无需事先通知用户。\n
+       \t2、鉴于“e骑”账号的绑定注册方式，您同意e骑在注册时将允许您的手机号码及手机设备识别码等信息用于注册。\n
+       \t3、在用户注册及使用本服务时，e骑需要搜集能识别用户身份的个人信息以便e骑可以在必要时联系用户，或为用户提供更好的使用体验。e骑搜集的信息包括但不限于用户的身份证及学生证信息，e骑同意对这些信息的使用将受限于用户个人隐私保护的约束。另外，在不透露单个用户隐私资料的前提下，e骑有权对整个用户数据库进行分析并对用户数据库进行商业上的利用。\n
+       \t4、用户理解并同意，e骑有权依合理判断对违反有关法律法规或本协议规定的行为进行处罚，对违法违规的任何用户采取适当的法律行为，并依据法律法规保存有关信息向有关部门报告等，用户应承担由此而产生的一切法律责任。\n
+       \t5、用户理解并同意，因用户违反本协议规定，导致或产生的任何第三方主张的任何索赔、要求或损失，包括合理的律师费，用户应当赔偿e骑与合作公司、关联公司，并使之免受损害。\n
+       \t6、e骑提供的服务中可能包括广告，用户同意在使用过程中显示e骑和第三方供应商、合作伙伴提供的广告。除法律法规明确规定外，用户应自行对依据广告信息进行的交易负责，对用户因依该广告信息进行的交易或前述广告商提供的内容而遭受的损失或损害，e骑不承担任何责任。\n
+       \t7、e骑对下列不可抗力行为免责：信息网络正常的设备维护，信息网络连接故障，电脑、通讯或其他系统的故障，电力故障，罢工，劳动争议，暴乱，起义，骚乱，生产力或生产资料不足，火灾，洪水，风暴，爆炸，战争，政府行为，司法行政机关的命令或第三方的不作为而造成的不能服务或延迟服务。\n
+       \t8、用户所注册的e骑账号包含押金和租金两个账户，申请退款时押金五个工作日后退到用户所提供的支付宝账号，租金不退但不清零。用户所注册的e骑账号押金账户或租金账户余额不足时，无法正常租赁车辆。\n
+       \t二、e骑的责任义务\n
+       \t1、e骑向用户交付设备齐全的租赁车辆，并对承租人是否具有相应的行为能力进行合理审查，车辆所有权归e骑所有。\n
+       \t2、车辆租赁期间若发生交通事故，e骑不承担任何责任，需由用户自行负责。\n
+       \t3、e骑免费提供租赁车辆保养及月检、合理使用中出现的故障维修。\n
+       \t4、e骑不承担由用户使用租赁车辆引发的连带责任及任何经济责任。\n
+       \t5、e骑拒绝接受租赁车辆在租赁期间发生交通违章的处罚，并有权将账号注册的用户作为责任人提交公安交通管理部门处理。\n
+       \t三、用户的责任义务\n
+       \t1、安全使用租赁车辆，自觉承担租赁后车辆不合理使用造成的相关费用支出（例如：车辆外观损坏、车架钢圈碰撞变形等）。\n
+       \t2、承担车辆租赁期间发生的交通事故处理费用及事故车辆损失、车辆盗抢、第三者责任的风险。\n
+       \t3、在租赁期间拥有租赁车辆的合法使用权并享有e骑为保障租赁车辆使用功能所提供的服务。\n
+       \t4、使用租赁车辆应遵守相关法律法规，如用户违反交通规则（法）自行承担交通处罚。\n
+       \t5、妥善保管租赁车辆，配合e骑为保障车辆性能的各项工作。\n
+       \t6、不得买卖、抵押、质押、转租、转借租赁车辆，不得擅自变动、修理、添改租赁车辆任何部位或部件。\n
+       \t7、承担因使用不合理造成租赁车辆修理、停驶的损失，承担丢失租赁车辆及牌证补办费用及停驶期间租金。\n
+       \t8、根据相关法律法规，电动自行车不允许载人。\n
+       \t四、其他\n
+       \t1、e骑郑重提醒用户注意本协议中免除e骑责任和限制用户权利的条款，请用户仔细阅读，自主考虑风险。依据相关法律法规，未满16周岁的未成年人不得驾驶电动自行车。\n
+       \t2、本协议的效力、解释及纠纷的解决，适用于中华人民共和国法律，如无相关法律规定的，则应参照通用国际商业惯例或行业惯例。若用户和e骑之间发生任何纠纷或争议，首先应当友好协商解决，协商不成的，用户同意将纠纷或争议提交至e骑所在地有管辖权的人民法院管辖。\n
+       \t3、本协议的任何条款无论因何种原因无效或不具可执行性，其余条款仍有效，对双方具有约束力。\n
+       \t4、本协议最终解释权归e骑租赁有限公司所有。\n
+    </string>
+    <string name="common_cancel">取消</string>
+    <string name="common_ok">确定</string>
+</resources>

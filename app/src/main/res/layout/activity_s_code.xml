@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/actstyle">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_height="48dp"
+        style="@style/item_Layout">
+
+        <EditText style="@style/etLogin"
+            android:id="@+id/etCode"
+            android:hint="请输入车辆编号"/>
+
+    </LinearLayout>
+
+    <Button
+        android:text="确定"
+        android:id="@+id/btnOK"
+        android:layout_marginTop="@dimen/LongBtnMgTop"
+        android:background="@drawable/sl_longbtn"
+        style="@style/LongBtn" />
+
+</LinearLayout>

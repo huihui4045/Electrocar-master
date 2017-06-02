@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_height="48dp"
+        style="@style/item_Layout">
+
+        <ImageView
+            android:src="@drawable/ic_iphone"
+            style="@style/icLogin" />
+
+        <EditText style="@style/etLogin"
+            android:id="@+id/etPhoneR"
+            android:inputType="phone"
+            android:hint="请输入11位手机号码"/>
+
+    </LinearLayout>
+
+    <View style="@style/separate_view" />
+
+    <LinearLayout
+        android:layout_height="48dp"
+        style="@style/item_Layout">
+
+        <ImageView
+            android:src="@drawable/ic_verification"
+            style="@style/icLogin" />
+
+        <EditText style="@style/etLogin"
+            android:id="@+id/etVerifyR"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:hint="请输入验证码"/>
+
+        <TextView
+            android:text="获取验证码"
+            android:id="@+id/tvVerifyR"
+            android:gravity="center"
+            android:textColor="@color/FontBlack"
+            android:layout_marginRight="30dp"
+            style="@style/icLogin" />
+
+    </LinearLayout>
+
+    <View style="@style/separate_view" />
+
+    <LinearLayout
+        android:layout_height="48dp"
+        style="@style/item_Layout">
+
+        <CheckBox
+            android:id="@+id/cbAgreeR"
+            style="@style/icLogin" />
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我同意并同意"
+                android:textColor="@color/FontBlack" />
+
+            <TextView
+                android:id="@+id/tvAgreeR"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/agreementName2"
+                android:textColor="@color/FontBlue" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:text="登录"
+        android:background="@drawable/sl_longbtn"
+        android:layout_marginTop="16dp"
+        style="@style/LongBtn" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/about_logo"/>
+    </RelativeLayout>
+
+</LinearLayout>

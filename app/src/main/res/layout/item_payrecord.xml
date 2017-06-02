@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/margin_x"
+        android:layout_marginRight="@dimen/margin_x"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:textSize="@dimen/FontTitle_Small"
+            android:textColor="@color/FontBlack"
+            android:text="退款"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:textColor="@color/FontGray"
+            android:layout_alignParentRight="true"
+            android:text="2016-09-05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvMoney"
+            android:layout_below="@+id/tvDate"
+            android:layout_marginTop="8dp"
+            android:textSize="@dimen/FontTitle_Small"
+            android:textColor="@color/FontBlack"
+            android:layout_alignParentRight="true"
+            android:text="+99.00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+</LinearLayout>

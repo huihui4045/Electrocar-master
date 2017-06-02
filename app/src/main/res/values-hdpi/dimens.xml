@@ -1,0 +1,46 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="FontTitle">20sp</dimen>
+    <dimen name="FontTitle_Small">16sp</dimen>
+    <dimen name="FontInput">14sp</dimen>
+    <dimen name="FontBig">30sp</dimen>
+    <dimen name="FontIndex">13sp</dimen>
+
+    <dimen name="LongBtnMgTop">114dp</dimen>
+    <dimen name="HeadHeight">80dp</dimen>  <!-- 头像的高度 -->
+
+    <dimen name="margin_x">10dp</dimen>
+
+    <dimen name="ac_bike_h1">60dp</dimen>
+    <dimen name="ac_bike_h2">40dp</dimen>
+    <dimen name="ac_bike_h3">40dp</dimen>
+
+    <dimen name="ac_returnbike_h1">30dp</dimen>
+    <dimen name="ac_returnbike_h2">15dp</dimen>
+    <dimen name="ac_returnbike_h3">15dp</dimen>
+
+    <dimen name="dw_userinfo_h1">150dp</dimen>
+    <dimen name="dw_userinfo_h2">50dp</dimen>
+
+    <dimen name="it_bikelist_w1">60dp</dimen>
+    <dimen name="it_msglist_w1">45dp</dimen>
+
+    <dimen name="ac_refound_h1">30dp</dimen>
+    <dimen name="ac_refound_h2">30dp</dimen>
+
+    <dimen name="ac_userinfo_h1">90dp</dimen>
+    <dimen name="ac_userinfo_h2">70dp</dimen>
+
+    <dimen name="ac_login_w1">5dp</dimen>
+    <dimen name="ac_login_w2">15dp</dimen>
+
+    <dimen name="ac_fault_h1">120dp</dimen>
+    <dimen name="ac_fault_h2">30dp</dimen>
+
+    <dimen name="pic_icon">60dp</dimen>
+    <dimen name="battery_full">20dp</dimen>
+
+</resources>

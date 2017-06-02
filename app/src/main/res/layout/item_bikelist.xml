@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar_iv"
+        android:layout_width="@dimen/it_bikelist_w1"
+        android:layout_height="@dimen/it_bikelist_w1"
+        android:layout_marginLeft="@dimen/margin_x"
+        android:src="@drawable/about_logo"
+        app:civ_border_color="#09a1e8"
+        app:civ_border_width="1dp" />
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/margin_x"
+        android:orientation="vertical"
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvBikePowerDis"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.2km" />
+
+            <TextView
+                android:id="@+id/tvBikeElect"
+                android:layout_toLeftOf="@+id/tvBikePowerDis"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电量30%" />
+
+            <TextView
+                android:id="@+id/tvBikeName"
+                android:layout_width="match_parent"
+                android:layout_toLeftOf="@+id/tvBikeElect"
+                android:layout_marginRight="15dp"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:text="NBbike3723"
+                android:textColor="@color/FontBlack"
+                android:textSize="@dimen/FontTitle_Middle" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tvBuyDate"
+            android:layout_marginTop="6dp"
+            android:text="采购日期 16/10/3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvBikePos"
+                android:text="凤凰岗村102号便民租车点恢复数据库放空间回复禾嘉股份很谨慎的官方还记得是规范和加工费发货的股份"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:maxWidth="200dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvBikeDis"
+                android:layout_toRightOf="@+id/tvBikePos"
+                android:layout_marginLeft="5dp"
+                android:text="402米"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

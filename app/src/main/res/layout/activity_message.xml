@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/actstyle">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/margin_x"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:text="10/31 15:33"
+                android:textColor="@color/FontBlack"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatar_iv"
+                android:layout_width="@dimen/it_msglist_w1"
+                android:layout_height="@dimen/it_msglist_w1"
+                android:layout_marginLeft="@dimen/margin_x"
+                android:layout_below="@+id/tvTime"
+                android:layout_marginTop="@dimen/margin_x"
+                android:src="@drawable/about_logo"/>
+
+            <LinearLayout
+                android:id="@+id/loText"
+                android:background="@drawable/msg_frame"
+                android:layout_alignTop="@+id/avatar_iv"
+                android:layout_toRightOf="@+id/avatar_iv"
+                android:layout_marginLeft="@dimen/margin_x"
+                android:layout_marginRight="@dimen/margin_x"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvText"
+                    android:text="jadfjkahsdfkja"
+                    android:textColor="@color/FontBlack"
+                    android:layout_marginLeft="@dimen/margin_x"
+                    android:layout_marginRight="@dimen/margin_x"
+                    android:layout_marginTop="@dimen/margin_x"
+                    android:layout_marginBottom="@dimen/margin_x"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

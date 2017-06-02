@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:id="@+id/loLeft"
+            android:orientation="horizontal"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <LinearLayout
+            android:id="@+id/loRight"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <ImageView
+            android:id="@+id/ivLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_x"
+            android:src="@drawable/ic_back"
+            android:visibility="visible"/>
+        <TextView
+            android:id="@+id/tv_center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_x"
+            android:drawableLeft="@drawable/burger_menu"
+            android:text="个人中心"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="标题"
+            android:textColor="@color/FontBlack"
+            android:textSize="@dimen/FontTitle" />
+
+        <ImageView
+            android:id="@+id/ivRight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_x"
+            android:src="@drawable/ic_lscanning"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_x"
+            android:textColor="@color/FontBlue"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/FontTitle"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:background="@color/FillGray"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+</LinearLayout>

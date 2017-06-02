@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 触摸模式下单击时的背景图片-->
+    <item android:state_pressed="true"   android:drawable="@drawable/shortbtn_blue" />
+
+    <!-- 默认时的背景图片-->
+    <item android:state_enabled="false" android:drawable="@drawable/shortbtn_gray" />
+
+    <!-- 默认时的背景图片-->
+    <item android:drawable="@drawable/shortbtn_blue" />
+
+</selector>

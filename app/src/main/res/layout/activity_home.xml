@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/actstyle">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/Dlo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/toolbar"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical">
+               <com.amap.api.maps2d.MapView
+                   android:id="@+id/mv_location"
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="9"/>
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="1"
+                   android:background="@android:color/black">
+                   <TextView
+                       android:id="@+id/iv_home_near"
+                       android:layout_width="wrap_content"
+                       android:layout_height="40dp"
+                       android:layout_centerVertical="true"
+                       android:layout_marginLeft="10dp"
+                       android:drawableTop="@drawable/ic_burger_menu"
+                       android:text="附近车辆"
+                       android:textSize="12sp"
+                       android:textColor="@android:color/white"/>
+                   <TextView
+                       android:id="@+id/iv_home_scan"
+                       android:layout_width="wrap_content"
+                       android:layout_height="40dp"
+                       android:layout_alignParentRight="true"
+                       android:layout_centerVertical="true"
+                       android:layout_marginRight="10dp"
+                       android:drawableTop="@drawable/ic_blue_scanning"
+                       android:text="扫描租车"
+                       android:textSize="12sp"
+                       android:textColor="@android:color/white"/>
+               </RelativeLayout>
+           </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/left_drawer"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left">
+
+            <include layout="@layout/drawer_userinfo"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/actstyle">
+
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:src="@drawable/warn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvSuc"
+            android:text="账户余额不足租车失败"
+            android:textSize="@dimen/FontTitle"
+            android:textColor="@color/FontBlack"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/iv"
+            android:layout_marginTop="36dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvWarn"
+            android:text="请充值再进行租车"
+            android:textSize="@dimen/FontInput"
+            android:textColor="@color/FontRed"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tvSuc"
+            android:layout_marginTop="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_marginTop="65dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/FillGray" />
+
+    <LinearLayout
+        android:id="@+id/loRecharge"
+        android:layout_height="48dp"
+        style="@style/item_Layout">
+
+        <ImageView
+            android:src="@drawable/wallet"
+            style="@style/icLogin" />
+
+        <TextView
+            style="@style/itemtv"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="充值"/>
+
+        <ImageView
+            android:src="@drawable/into"
+            android:layout_marginRight="15dp"
+            style="@style/icLogin" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/FillGray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvDeposit"
+                android:text="押金0元"
+                android:textColor="@color/FontGray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvDepositOpr"
+                android:text="退押金"
+                android:textColor="@color/FontBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

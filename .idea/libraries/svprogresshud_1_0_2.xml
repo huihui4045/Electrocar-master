@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="svprogresshud-1.0.2">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/e94c9992f79706dc8b8a26fbd2f246321bdef4b5/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/e94c9992f79706dc8b8a26fbd2f246321bdef4b5/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.bigkoo/svprogresshud/1.0.2/6f66405337de312064bcdf3b141b376695a40179/svprogresshud-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

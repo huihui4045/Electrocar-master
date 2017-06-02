@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/actstyle">
+
+    <include layout="@layout/toolbar"/>
+
+    <ImageView
+        android:id="@+id/ivBike"
+        android:layout_marginTop="@dimen/ac_bike_h1"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/set_bike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/ac_bike_h2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <View
+            android:id="@+id/seprateView"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/FillBlue"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_toLeftOf="@+id/seprateView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/vBattery"
+                    android:layout_marginLeft="2dp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/FillBlue"
+                    android:layout_width="24dp"
+                    android:layout_height="14dp"/>
+
+                <ImageView
+                    android:id="@+id/ivBattery"
+                    android:src="@drawable/electricity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvBattery"
+                    android:textSize="@dimen/FontBig"
+                    android:textColor="@color/FontBlue"
+                    android:text="52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvBattery2"
+                    android:textSize="@dimen/FontInput"
+                    android:textColor="@color/FontBlue"
+                    android:text="%"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_toRightOf="@+id/seprateView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivDistance"
+                android:src="@drawable/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvDistance"
+                    android:textSize="@dimen/FontBig"
+                    android:textColor="@color/FontBlue"
+                    android:text="22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvDistance2"
+                    android:textSize="@dimen/FontInput"
+                    android:textColor="@color/FontBlue"
+                    android:text="km"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/ac_bike_h3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnLock"
+                android:text="锁车"
+                android:textColor="@color/FontBlue"
+                android:background="@drawable/sl_shortbtn"
+                android:layout_marginBottom="5dp"
+                style="@style/LongBtn" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnReturn"
+                android:text="还车"
+                android:textColor="@color/FontBlue"
+                android:background="@drawable/sl_shortbtn"
+                style="@style/LongBtn" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

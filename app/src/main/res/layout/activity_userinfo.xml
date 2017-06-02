@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/toolbar"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/user"
+                app:civ_border_color="#09a1e8"
+                app:civ_border_width="1dp" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/FillGray" />
+
+        <LinearLayout
+            style="@style/item_Layout"
+            android:layout_height="44dp">
+
+            <TextView
+                android:text="姓名"
+                style="@style/itemtv"  />
+
+            <EditText
+                android:id="@+id/etName"
+                style="@style/etLogin"
+                android:hint="请输入姓名" />
+
+        </LinearLayout>
+
+        <View style="@style/separate_view" />
+
+        <LinearLayout
+            style="@style/item_Layout"
+            android:layout_height="44dp">
+
+            <TextView
+                style="@style/itemtv"
+                android:text="学校"/>
+
+            <TextView
+                android:id="@+id/etSchool"
+                style="@style/etLogin"
+                android:hint="请选择学校"
+                android:singleLine="true"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <View style="@style/separate_view" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                style="@style/itemtv"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="身份证（正反面）" />
+
+            <TextView
+                android:id="@+id/tv_identity_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_x"
+                android:textSize="@dimen/FontTitle_Small"
+                android:text="0/2" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/FillGray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ac_userinfo_h1">
+
+            <ImageView
+                android:id="@+id/ivId1"
+                android:src="@drawable/add_photo"
+                android:layout_marginLeft="@dimen/margin_x"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/ac_userinfo_h2"
+                android:layout_height="@dimen/ac_userinfo_h2" />
+
+            <ImageView
+                android:id="@+id/ivId2"
+                android:layout_toRightOf="@+id/ivId1"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/add_photo"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/ac_userinfo_h2"
+                android:layout_height="@dimen/ac_userinfo_h2" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/FillGray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                style="@style/itemtv"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="学生证（录取通知书）" />
+
+            <TextView
+                android:id="@+id/tv_student_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/margin_x"
+                android:textSize="@dimen/FontTitle_Small"
+                android:text="0/1" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/FillGray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ac_userinfo_h1">
+
+            <ImageView
+                android:id="@+id/ivSd1"
+                android:src="@drawable/add_photo"
+                android:layout_marginLeft="@dimen/margin_x"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/ac_userinfo_h2"
+                android:layout_height="@dimen/ac_userinfo_h2" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/FillGray" />
+
+        <Button
+            android:id="@+id/btn_user_info_OK"
+            android:text="认证"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/sl_longbtn"
+            style="@style/LongBtn"
+            android:enabled="false"/>
+
+        <View
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+    </LinearLayout>
+
+</ScrollView>

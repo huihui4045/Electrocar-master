@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="saiyi.com.xiande" >
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- <uses-feature android:name="android.hardware.camera" />-->
+
+    <!-- WeixinPay -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!-- Normal Permissions 不需要运行时注册 -->
+    <!--获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <!-- 请求网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 不是SDK需要的权限，是示例中的后台唤醒定位需要的权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 需要运行时注册的权限 -->
+    <!--用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--用于提高GPS定位速度-->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!--写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--读取缓存数据-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 更改设置 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/artwork"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- 蒲公英崩溃appId 正式版的时候需要去除 -->
+        <meta-data
+            android:name="PGYER_APPID"
+            android:value="4235df7c3288d261a4e9d22f08a1606b" >
+        </meta-data>
+
+        <!-- 设置key -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="2126bfc50d095250e98310d5e09f9108" />
+        <!-- 定位需要的服务 -->
+        <service android:name="com.amap.api.location.APSService" >
+        </service>
+
+        <activity
+            android:name=".activity.AcSplash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.Login"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+        </activity>
+
+        <!-- alipay sdk begin -->
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <!-- alipay sdk end -->
+
+        <!-- wxpay sdk begin -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+        <!-- wxpay sdk end -->
+
+        <activity
+            android:name=".activity.AcNearBike"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AcAbout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AcBikeOnMap"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AcChangeConnect"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AcChangePhone1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AcChangePhone2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AcChangePwd"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AcFault"
+            android:windowSoftInputMode="stateVisible|adjustPan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AcFence"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AcForgotPwd"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AcMessage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AcMessageList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AcMoney"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AcMoneyLack"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AcPayRecord"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AcReCharge"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AcRechargeDeposit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AcRefund"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AcRefundOK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AcRefundFail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AcReturnBike"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AcReturnBikeMap"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AcUserInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AcUserInfoSubmit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AcAgreement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AcSBikeTypeList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AcSStopList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AcSCode"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".zbar.CaptureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.AcBike"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>
